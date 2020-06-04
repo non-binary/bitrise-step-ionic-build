@@ -12,7 +12,7 @@ title: |-
 summary: |
   The Step runs ionic build with the arguments you provide.
 description: |
-  TBD
+  The Step runs ionic build with the arguments you provide.
 website: https://github.com/non-binary/bitrise-step-steps-ionic-build
 source_code_url: https://github.com/non-binary/bitrise-step-steps-ionic-build
 support_url: https://github.com/non-binary/bitrise-step-steps-ionic-build/issues

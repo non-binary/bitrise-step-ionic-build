@@ -1,6 +1,6 @@
 # steps-ionic-build
 
-TBD
+The Step runs ionic build with the arguments you provide.
 
 
 ## How to use this Step
