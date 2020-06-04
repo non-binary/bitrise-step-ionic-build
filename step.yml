@@ -61,7 +61,7 @@ inputs:
       is_expand: true
       is_required: true
       value_options: ["yes", "no"]
-  - advanced_options: 
+  - advanced_options: ""
     opts:
       title: "Advanced Options"
       summary: To optionally use advanced options flags.
@@ -70,13 +70,3 @@ inputs:
         Flags that are available can be found here: https://ionicframework.com/docs/cli/commands/build#advanced-options.
       is_expand: true
       is_required: false
-
-# outputs:
-#   - EXAMPLE_STEP_OUTPUT:
-#     opts:
-#       title: "Example Step Output"
-#       summary: Summary. No more than 2-3 sentences.
-#       description: |
-#         Description of this output.
-
-#         Can be Markdown formatted text.
