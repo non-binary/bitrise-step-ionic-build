@@ -29,14 +29,8 @@ host_os_tags:
 # You can find more information about project type tags in the Step Development Guideline:
 # https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md
 #
-# project_type_tags:
-#   - ios
-#   - macos
-#   - android
-#   - xamarin
-#   - react-native
-#   - cordova
-#   - ionic
+project_type_tags:
+  - ionic
 
 # Type tags are used for categorizing steps, for easier step discovery in Step Libraries.
 # You can find more information about type tags in the Step Development Guideline:
@@ -50,38 +44,39 @@ is_skippable: false
 run_if: ""
 
 deps:
-  brew:
-  - name: git
-  - name: wget
-  apt_get:
-  - name: git
-  - name: wget
-
+  check_only:
+  - name: ionic
 
 toolkit:
   bash:
     entry_file: step.sh
 
-
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - production-mode: "no"
     opts:
-      title: "Example Step Input"
-      summary: Summary. No more than 2-3 sentences.
+      title: "Production Configuration"
+      summary: To use the production configuration.
       description: |
-        Description of this input.
-
-        Can be Markdown formatted text.
+        Set to yes if you want `--prod` to be used.
       is_expand: true
       is_required: true
-      value_options: []
-
-outputs:
-  - EXAMPLE_STEP_OUTPUT:
+      value_options: ["yes", "no"]
+  - advanced-options: 
     opts:
-      title: "Example Step Output"
-      summary: Summary. No more than 2-3 sentences.
+      title: "Advanced Options"
+      summary: To optionally use advanced options flags.
       description: |
-        Description of this output.
+        You can pass advanced options to this (just the flag) to customize your build.
+        Flags that are available can be found here: https://ionicframework.com/docs/cli/commands/build#advanced-options.
+      is_expand: true
+      is_required: false
 
-        Can be Markdown formatted text.
+# outputs:
+#   - EXAMPLE_STEP_OUTPUT:
+#     opts:
+#       title: "Example Step Output"
+#       summary: Summary. No more than 2-3 sentences.
+#       description: |
+#         Description of this output.
+
+#         Can be Markdown formatted text.
