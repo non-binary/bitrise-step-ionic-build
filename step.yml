@@ -52,7 +52,7 @@ toolkit:
     entry_file: step.sh
 
 inputs:
-  - production-mode: "no"
+  - production_mode: "no"
     opts:
       title: "Production Configuration"
       summary: To use the production configuration.
@@ -61,7 +61,7 @@ inputs:
       is_expand: true
       is_required: true
       value_options: ["yes", "no"]
-  - advanced-options: 
+  - advanced_options: 
     opts:
       title: "Advanced Options"
       summary: To optionally use advanced options flags.
