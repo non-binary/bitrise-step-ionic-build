@@ -1,4 +1,4 @@
-# steps-ionic-build
+# Ionic Build
 
 The Step runs ionic build with the arguments you provide.
 
