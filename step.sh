@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-if [ "$production_mode" = "yes" ] 
+if [ "$production_mode" = "true" ] 
 then
     ionic build --prod $advanced_options
 else

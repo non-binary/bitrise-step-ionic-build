@@ -60,7 +60,7 @@ inputs:
         Set to yes if you want `--prod` to be used.
       is_expand: true
       is_required: true
-      value_options: ["yes", "no"]
+      value_options: ["true", "false"]
   - advanced_options: ""
     opts:
       title: "Advanced Options"
