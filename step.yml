@@ -8,14 +8,14 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  steps-ionic-build
+  Ionic Build
 summary: |
   The Step runs ionic build with the arguments you provide.
 description: |
   The Step runs ionic build with the arguments you provide.
-website: https://github.com/non-binary/bitrise-step-steps-ionic-build
-source_code_url: https://github.com/non-binary/bitrise-step-steps-ionic-build
-support_url: https://github.com/non-binary/bitrise-step-steps-ionic-build/issues
+website: https://github.com/non-binary/bitrise-step-ionic-build
+source_code_url: https://github.com/non-binary/bitrise-step-ionic-build
+support_url: https://github.com/non-binary/bitrise-step-ionic-build/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
