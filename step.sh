@@ -3,7 +3,7 @@ set -ex
 
 if [ "$production_mode" = "true" ] 
 then
-    ionic build --prod $advanced_options
+    ionic build --prod $options
 else
-    ionic build $advanced_options
+    ionic build $options
 fi
