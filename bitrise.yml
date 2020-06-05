@@ -41,12 +41,12 @@ workflows:
     - path::./:
         title: "Ionic Build --prod --source-map"
         inputs:
-         - production_mode: true
-         - advanced_options: "--source-map"
+         - production_mode: "yes"
+         - options: "--source-map"
     - path::./:
         title: "Ionic Build without --prod"
         inputs:
-         - production_mode: false
+         - production_mode: "no"
 
 
   # ----------------------------------------------------------------
