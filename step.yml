@@ -56,13 +56,13 @@ inputs:
         Set to yes if you want `--prod` to be used.
       is_expand: true
       is_required: true
-      value_options: ["true", "false"]
-  - advanced_options: ""
+      value_options: ["yes", "no"]
+  - options: ""
     opts:
-      title: "Advanced Options"
+      title: "Options"
       summary: To optionally use advanced options flags.
       description: |
-        You can pass advanced options to this (just the flag) to customize your build.
+        You can pass additional options to this command to customize your build (just the flag).
         Flags that are available can be found here: https://ionicframework.com/docs/cli/commands/build#advanced-options.
       is_expand: true
       is_required: false
